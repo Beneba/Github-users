@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {  Row } from "react-bootstrap";
+import {  Row,Col } from "react-bootstrap";
 import User from './User';
 
 import axios from "axios";
@@ -47,11 +47,12 @@ function Users() {
     
       
       <Row>
-     
-      {/* {users.map((users, index) => (                                            
+        <Col>
+       {users.map((users, index) => (                                            
           <User key={index} index={index} user={users} />
-        ))}   */}
-        <User />
+        ))}  
+        
+        </Col>
       </Row>
   );
   }
