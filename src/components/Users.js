@@ -9,27 +9,27 @@ function Users() {
   // let githubUsers = [];
  
   // const [users, setUsers] = useState(githubUsers);
-  const [users, setUsers] = useState([
-    {
-      username:"a dammyimage",
-     type: "user ",
-      score: 1,
-      isCompleted: false,
-    },
-    {
-      username:"a dammyimage",
-     type: "student ",
-     score: 3,
-      isCompleted: false,
-    },
-    {
-      username:"a dammyimage",
-     type: "prefect ",
-     score:2,
-      isCompleted: false,
-    },
+  // const [users, setUsers] = useState([
+  //   {
+  //     username:"a dammyimage",
+  //    type: "user ",
+  //     score: 1,
+  //     isCompleted: false,
+  //   },
+  //   {
+  //     username:"a dammyimage",
+  //    type: "student ",
+  //    score: 3,
+  //     isCompleted: false,
+  //   },
+  //   {
+  //     username:"a dammyimage",
+  //    type: "prefect ",
+  //    score:2,
+  //     isCompleted: false,
+  //   },
     
-  ]);
+  // ]);
 
   // useEffect(() => { 
   //   axios
@@ -48,10 +48,10 @@ function Users() {
       
       <Row>
         <Col>
-       {users.map((users, index) => (                                            
+       {/* {users.map((users, index) => (                                            
           <User key={index} index={index} user={users} />
-        ))}  
-        
+        ))}   */}
+        <User />
         </Col>
       </Row>
   );
