@@ -40,12 +40,10 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: aliceblue;
+  
   margin: 25px;
 }
-Card.card-effet{
-  border-radius: 20px;
-}
+
 
 .center{
   display:block;
@@ -65,6 +63,7 @@ Card.card-effet{
 p{
   font-size: 12;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .card-changes:hover{
   align-items: center;

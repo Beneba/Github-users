@@ -4,7 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Row, Col, CardGroup } from "react-bootstrap";
 import profileIcon from "../img/profileIcon.jpg";
 
-function User({user}) {
+function User({user, loading}) { 
+    if (loading) {
+        return <h2>Loading...</h2>; 
+    }
     
   return (
     <div className="Item">
@@ -15,10 +18,11 @@ function User({user}) {
             {user.map((users, index) => (  <Col>
                  <Card className="card-effect">
                  <img src={profileIcon}  className="center"/>
-                 <p> <b>Username</b></p>  
+                 <p> <b>{users.login}</b></p>  
                  <Card.Text className="card-changes">
-                     <p>Type:{users.type} </p>
                      <p>Score: {users.score}</p>
+                     <p>Type:{users.type} </p>
+                     <p> {users.html_url}</p>
                  </Card.Text>
              </Card>                                          
             </Col>  

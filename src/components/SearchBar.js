@@ -7,13 +7,14 @@ function SearchBar({filterNames}) {
     <div className="bckgrd-image">
       <Form className="d-flex">
         <FormControl
-          type="text"
+          type="search"
           name= "search"
           placeholder="Search Github Users"
           className="me-2"
            onChange = {(e) => filterNames(e)}
         />
-        <Button variant="outline-success">Search</Button>
+        <Button variant="outline-primary">Search</Button>
+        
       </Form>
     </div>
   );
