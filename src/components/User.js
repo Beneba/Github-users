@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card, Row, Col, CardGroup } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import profileIcon from "../img/profileIcon.jpg";
 
 function User({user, loading}) { 

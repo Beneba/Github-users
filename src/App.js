@@ -9,14 +9,12 @@ import axios from 'axios';
 
 function App() {
   let githubUsers = [];
- 
   const [users, setUsers] = useState(githubUsers);
   const [loading , setLoading] =useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostPerPage] = useState(6);
  
   useEffect(() => { 
-    
       setLoading(true);
        axios .get("https://api.github.com/search/users?q=lagos&page=1")
       .then((res) => { 
@@ -50,15 +48,13 @@ function App() {
       <Row>
         <Col xs={12} md={12} >
           <SearchBar  filterNames ={filterNames} />
-          
         </Col>
-        <br/>
+        
         <Col  xs={12} md={12}> 
           <User   user={currentPosts} loading ={loading} />
-
         </Col>
+        
         <Col xs = {12} md = {12}>
-          
           <Paginition postsPerPage ={postsPerPage} totalPosts ={users.length} paginate ={paginate}  />
         </Col>
         

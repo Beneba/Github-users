@@ -1,7 +1,5 @@
 body{
-
   background: #f85c3c;
-  
    background-image: linear-gradient(90deg, #d6343d 0%, #e05175 74%)
 }
 .app{
@@ -9,16 +7,6 @@ body{
   justify-content: center;
   padding:20px;
   display: flex;
-
-}
-
-.Item{
-  display:grid;
-  padding:10;
-  
-	width: 110%;
-	max-width: 1200px;
-	margin: 0 auto;
 }
 .grid-container{
   display: grid;
@@ -30,7 +18,6 @@ body{
   margin-right:15%;
 }
 .bckgrd-image{
-  
   align-items: center;
   justify-content: center;
   display: flex;
